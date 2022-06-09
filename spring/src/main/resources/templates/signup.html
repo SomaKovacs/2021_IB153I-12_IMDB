@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regisztráció - IMDb</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/login.css">
+
+    <script src="script/nav.js" defer></script>
+</head>
+
+<body>
+    <nav id="nav"> </nav>
+    <div class="container">
+        <div class="clip-path"></div>
+        <div class="log-panel">
+            <h2>Regisztráció</h2>
+            <label>
+                Felhasználónév<br>
+                <input type="text" id="username">
+            </label>
+            <label>
+                Jelszó<br>
+                <input type="password" id="password">
+            </label>
+            <label>
+                Jelszó ismét<br>
+                <input type="password" >
+            </label>
+            <label>
+                Email cím<br>
+                <input type="email"  id="email">
+            </label>
+            <label>
+                Születési dátum<br>
+                <input type="text" id="birthday">
+            </label>
+            <p>Már regisztráltál? Kattints <a class="here" href="login">ide</a>!</p>
+            <button class="btn" id="submit">Regisztráció</button>
+            <p id="error"></p>
+        </div>
+        <script src="script/signup.js"></script>
+    </div>
+    <footer>
+        <span>© 2021</span>
+    </footer>
+</body>
+
+</html>

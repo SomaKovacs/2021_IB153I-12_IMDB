@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Színészek - IMDb</title>
+  <link href="css/global.css" rel="stylesheet">
+  <link href="css/nav.css" rel="stylesheet">
+  <link href="css/list.css" rel="stylesheet">
+  <link href="css/loader.css" rel="stylesheet">
+
+
+  <!--ScrollMagic-->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+
+  <script src="script/nav.js" defer></script>
+  <script src="script/list.js" defer></script>
+
+</head>
+
+<body>
+  <nav id="nav"> </nav>
+  <div class="loader" id="loader">
+    <div class="lds-ripple"><div></div><div></div></div>
+  </div>
+  <div class="container">
+    <h1>Színészek</h1>
+    <div class="cards" id="cards">
+      <!--<div class="card">
+        <img alt=""
+          src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F61116cea2313e8bae55a536a%2F-Dune-%2F0x0.jpg%3Ffit%3Dscale">
+        <a href="actor">Színész</a>
+      </div>-->
+
+      <div class="card scroll-anim">
+        <img alt=""
+          src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F61116cea2313e8bae55a536a%2F-Dune-%2F0x0.jpg%3Ffit%3Dscale">
+        <a href="actor">Színész</a>
+      </div>
+
+      <div class="card scroll-anim">
+        <img alt=""
+          src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F61116cea2313e8bae55a536a%2F-Dune-%2F0x0.jpg%3Ffit%3Dscale">
+        <a href="actor">Színész</a>
+      </div>
+
+
+    </div>
+    <div id="pagination"></div>
+  </div>
+  <footer>
+    <span>© 2021</span>
+  </footer>
+</body>
+
+</html>

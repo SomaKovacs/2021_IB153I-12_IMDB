@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Film - IMDb</title>
+    <link href="css/global.css" rel="stylesheet">
+    <link href="css/nav.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+
+    <!--ScrollMagic-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script defer src="script/updateMovie.js"></script>
+    <script src="script/nav.js" defer></script>
+
+
+</head>
+
+<body>
+<nav id="nav"> </nav>
+<div class="container">
+    <div class="log-panel">
+        <h2>Film módosítása</h2>
+        <label>ID:</br>
+            <input id="id" type="text"></label>
+        <label>Kép:</br><input id="picture" type="text"></label>
+        <label>Cím: </br><input id="title" type="text"></label>
+        <label>Megjelenés éve: </br><input id="release_year" type="text"></label>
+        <label>Leírás: </br><input id="description" type="text"></label>
+        <label>Hossz: </br><input id="duration" type="text"></label>
+
+            <button class="btn" id="submit">Elküld</button>
+    </div>
+</div>
+<footer>
+    <span>© 2021</span>
+</footer>
+</body>
+
+</html>

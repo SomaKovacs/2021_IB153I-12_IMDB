@@ -1,0 +1,88 @@
+/*#region -----COMMENT------*/
+
+.comment {
+    background-color: var(--g3);
+    margin: 10px 0;
+    padding: 15px 20px;
+    /*opacity: 0;*/
+    transition: opacity .5s;
+}
+
+.comment h2, .comment .date {
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
+
+.comment .date {
+    color: var(--g1);
+    font-size: 15px;
+}
+
+.comment p {
+    display: block;
+    border-top: 1px solid white;
+    padding-top: 10px;
+}
+
+
+.display {
+    opacity: 1;
+}
+
+/*#endregion*/
+
+/*#region -----STARS-----*/
+
+.comment .stars .star {
+    background-color: var(--orange);
+    clip-path: polygon(50% 0%, 63% 38%, 100% 38%, 69% 59%, 82% 100%, 50% 75%, 18% 100%, 31% 59%, 0 38%, 37% 38%);
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+.add-comment .stars .star {
+    background-color: var(--g1);
+    cursor: pointer;
+    transition: all .5s;
+}
+
+/*#endregion*/
+
+/*#region -----ADD-COMMENT------*/
+.add-comment {
+    opacity: 1;
+}
+
+.add-comment textarea {
+    display: block;
+    background-color: var(--g1);
+    width: 100%;
+    padding: 0 5px;
+    color: black;
+    margin: 10px 0 15px;
+    height: 100px;
+}
+
+
+.add-comment .stars {
+    display: inline-flex;
+    align-self: flex-start;
+    flex-direction: row-reverse;
+}
+
+/*#javascriptagyengeknekvalo*/
+.add-comment .stars #s1:hover~.star,
+.add-comment .stars #s2:hover~.star,
+.add-comment .stars #s3:hover~.star,
+.add-comment .stars #s4:hover~.star,
+.add-comment .stars #s5:hover~.star,
+.add-comment .stars #s1:hover,
+.add-comment .stars #s2:hover,
+.add-comment .stars #s3:hover,
+.add-comment .stars #s4:hover,
+.add-comment .stars #s5:hover {
+    background-color: var(--orange);
+}
+
+/*#endregion*/

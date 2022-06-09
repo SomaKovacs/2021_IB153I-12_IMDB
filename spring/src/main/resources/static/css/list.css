@@ -1,0 +1,107 @@
+.container {
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px;
+    position: relative;
+}
+
+
+.container h2 {
+    margin: 5px;
+}
+
+.percent {
+    display: flex;
+    position: absolute;
+    border-radius: 50%;
+    background-color: var(--g2);
+    height: 60px;
+    width: 60px;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.percent>p {
+    font-weight: 500;
+}
+
+
+.container a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.card p {
+    font-size: 20px;
+    margin: 5px;
+    display: block;
+
+}
+
+
+.card>p {
+    font-weight: 600;
+    font-size: 24px;
+    margin: 5px;
+}
+
+.card {
+    background-color: var(--g4);
+    padding: 5px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: all 1.5s;
+    display: block;
+}
+
+.cards {
+    max-width: 90%;
+    margin: 40px;
+    display: grid;
+    grid-gap: 20px 40px;
+    text-align: center;
+}
+
+.cards img {
+    max-width: 90%;
+    margin: 5px;
+}
+
+@media (min-width: 700px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1000px) {
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1300px) {
+    .cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+#pagination .page-btn {
+    display: inline-block;
+    padding: 17px;
+    margin: 0 2px;
+    border: 1px solid var(--orange);
+    transition: background .2s;
+    cursor: pointer;
+}
+
+#pagination .page-btn:hover {
+    background-color: var(--orange);
+    color: black;
+}
+
+.display {
+    opacity: 1 !important;
+}
+

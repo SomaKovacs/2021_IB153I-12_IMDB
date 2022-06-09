@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil - IMDb</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/profile.css">
+
+    <script src="script/profile.js" defer></script>
+    <script src="script/nav.js" defer></script>
+</head>
+
+<body>
+    <nav id="nav"> </nav>
+    <div class="container">
+        <div class="clip-path-bg"></div>
+        <div class="panel">
+            <h2>Profil adatok</h2>
+            <img src="https://molsoft.hu/wp-content/uploads/2020/12/blank-profile-picture-973460_1280.png" alt=""
+                id="profile-img">
+            <label>
+                Felhasználónév<br>
+                <input type="text" id="username">
+            </label>
+            <label>
+                Email cím<br>
+                <input type="email" id="email">
+            </label>
+            <label>
+                Születési dátum<br>
+                <input type="text" id="birthday">
+            </label>
+            <label>
+                Profilkép<br>
+                <input type="text" id="picture">
+            </label>
+            <button class="btn" id="submit">Adatok módosítása</button>
+            <p id="error"></p>
+        </div>
+    </div>
+    <footer>
+        <span>© 2021</span>
+    </footer>
+</body>
+
+</html>

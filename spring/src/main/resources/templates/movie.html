@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Film - IMDb</title>
+    <link href="css/global.css" rel="stylesheet">
+    <link href="css/nav.css" rel="stylesheet">
+    <link href="css/item.css" rel="stylesheet">
+    <link href="css/comment.css" rel="stylesheet">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="script/movie.js" defer></script>
+    <script src="script/nav.js" defer></script>
+
+</head>
+
+<body>
+    <nav id="nav"> </nav>
+    <div class="container">
+        <div class="content">
+            <img id="picture" alt="" src="">
+            <div class="text-content">
+                <h1 id="title">Filmcím</h1>
+                <span id="update"></span>
+                <p class="properties">
+                    <span id="release-year"></span> •
+                    <span id="genres"></span> •
+                    <span id="duration"></span>
+                </p>
+                <h2>Bevezető: </h2>
+                <p class="description" id="description"></p>
+                <h2>Rendező:</h2>
+                <p class="description"></p>
+                <button class="btn" id="submit">Beküld</button>
+                <div class="comments" id="comments">
+                    <div class="comment add-comment">
+                        <h2>Értékeld a filmet:</h2>
+                        <div class="stars">
+                            <div class="star" id="s1"></div>
+                            <div class="star" id="s2"></div>
+                            <div class="star" id="s3"></div>
+                            <div class="star" id="s4"></div>
+                            <div class="star" id="s5"></div>
+                        </div>
+
+                        <textarea name="" id="message"></textarea>
+
+                    </div>
+                    <!--
+                    <div class="comment" id="comment-1">
+                        <h2>tesztelek</h2>
+                        <span class="date">febr. 13 12:22</span>
+                        <div class="stars">
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                        </div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, totam?</p>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <span>© 2021</span>
+    </footer>
+</body>
+
+</html>
